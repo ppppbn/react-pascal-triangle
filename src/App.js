@@ -33,17 +33,16 @@ class App extends Component {
   factorial = (number) => number >= 0 ? (number !== 0 ? number * this.factorial(number - 1) : 1) : -1 ;
 
   rotate = () => {
-    console.log('screen',this.state.screen);
-    this.setState({
+    this.state.exponent ? this.setState({
       screen : this.state.screen === 4 ? 1 : this.state.screen + 1
-    })
+    }) : 0;
   }
 
   render() {
     let screenClass;
     switch(this.state.screen) {
       case 1 : 
-        screenClass = "";
+        screenClass = " custom-display-flex custom-column";
         break;
       case 2 : 
         screenClass = " custom-display-flex custom-row-reverse horizontal-center";
@@ -61,7 +60,7 @@ class App extends Component {
     let lists = this.state.exponentArray.map((val, key) => {
       let row = this.state.exponentArray.slice(0, key + 1).map((val2, key2) => {
         return (
-          <div className="list-element horizontal-center vertical-center custom-display-inline-block">
+          <div className="list-element horizontal-center vertical-center">
             <h4 className="custom-display-inline-block">{this.calculateValue(key, key2)}</h4>
           </div>
         )
