@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.input-container {
+  width: 200px;
+  margin-top: 60px;
+}
+
+.input-container .btn{
+  width: 80px;
+  margin: 10px 5px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-center {
+  display: flex;
+  justify-content : center;
+}
+
+.custom-display-inline-block {
+  display: inline-block;
+}
+
+.list-element {
+  width: 60px;
+  height: 60px;
+}
+
+.triangle-container {
+  margin-top: 50px;
+}
+
+.custom-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.custom-column-reverse {
+  flex-direction : column-reverse;
+}
+
+.custom-display-flex {
+  display: flex;
+}
+
+.custom-row-reverse .big-list-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-row {
+  flex-direction: row;
+}
+
+.custom-row .big-list-container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
