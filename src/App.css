@@ -235,6 +235,13 @@ input::-webkit-inner-spin-button {
   color : white;
 }
 
+.animated-background {
+  animation: Animation 10s ease infinite;
+  -webkit-animation: Animation 10s ease infinite;
+  -moz-animation: Animation 10s ease infinite;
+  background-size: 200% 200%;
+}
+
 .version-container {
   position: absolute;
   bottom: 20px;
@@ -243,4 +250,20 @@ input::-webkit-inner-spin-button {
 
 .version-container h5 {
   font-weight: bold;
+}
+
+@-webkit-keyframes Animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Animation { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
