@@ -37,9 +37,9 @@ class App extends Component {
   factorial = (number) => number >= 0 ? (number !== 0 ? number * this.factorial(number - 1) : 1) : -1 ;
 
   rotate = () => {
-    this.state.exponent ? this.setState({
+    this.setState({
       screen : this.state.screen === 4 ? 1 : this.state.screen + 1
-    }) : 0;
+    });
   }
 
   toggleGradient = () => {
@@ -104,7 +104,10 @@ class App extends Component {
         </div>
         <div className={"text-center triangle-container" + screenClass}>
           {lists}
-      </div>
+        </div>
+        <div className="version-container hidden-xs">
+          <h5>v2.0.0</h5>
+        </div>
      </div>
     )
   }
