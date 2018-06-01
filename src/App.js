@@ -51,7 +51,7 @@ class App extends Component {
   colorClass = (val, val2) => {
     console.log('gra', this.state.gradient);
     var customColor = this.state.gradient ? 
-      bgGra[(val + val2)%12] : bg[Math.floor(Math.random() * 7)];
+      bgGra[(val + val2)%12] : bg[(val + val2) % 7];
     return customColor + " list-element horizontal-center vertical-center";
   }
 
