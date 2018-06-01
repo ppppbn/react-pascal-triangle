@@ -106,7 +106,7 @@ class App extends Component {
           {lists}
         </div>
         <div className="version-container hidden-xs">
-          <h5>v2.0.0</h5>
+          <h5>v2.0.1</h5>
         </div>
      </div>
     )
