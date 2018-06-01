@@ -1,3 +1,8 @@
+html, body {
+  height : 100%;
+  background :#f1f1f1;
+}
+
 .App {
   text-align: center;
 }
@@ -61,6 +66,8 @@ input::-webkit-inner-spin-button {
 .list-element {
   width: 60px;
   height: 60px;
+  margin: 10px;
+  border-radius: 50%;
 }
 
 .triangle-container {
@@ -106,3 +113,32 @@ input::-webkit-inner-spin-button {
   justify-content: center;
 }
 
+.bg-danger {
+  background :#d9534f;
+  color : white;
+}
+
+.bg-warning {
+  background : #f0ad4e;
+  color : white;
+}
+
+.bg-info {
+  background : #5bc0de;
+  color : white;
+}
+
+.bg-success {
+  background :#5cb85c;
+  color : white;
+}
+
+.bg-violet {
+  background : #c43fe2;
+  color : white;
+}
+
+.bg-dark {
+  background : #282828;
+  color : white;
+}

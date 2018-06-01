@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const bg = ['bg-primary', 'bg-success', 'bg-warning', 'bg-danger', 'bg-info', 'bg-violet', 'bg-dark'];
+
 class App extends Component {
   constructor(){
     super();
@@ -60,8 +62,8 @@ class App extends Component {
     let lists = this.state.exponentArray.map((val, key) => {
       let row = this.state.exponentArray.slice(0, key + 1).map((val2, key2) => {
         return (
-          <div className="list-element horizontal-center vertical-center">
-            <h4 className="custom-display-inline-block">{this.calculateValue(key, key2)}</h4>
+          <div className={"list-element horizontal-center vertical-center " + bg[Math.floor(Math.random()*7)]}>
+            <h4 className="custom-display-inline-block text-white">{this.calculateValue(key, key2)}</h4>
           </div>
         )
       })
